@@ -1,0 +1,34 @@
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -g -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -I/home/usr2/11D37048/usr/tools/scr-1.1-8//include -c IOR.c
+IOR.c(1839): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                               ^
+
+IOR.c(1839): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                                                  ^
+
+IOR.c(1839): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                                                                  ^
+
+IOR.c(1854): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                               ^
+
+IOR.c(1854): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                                                  ^
+
+IOR.c(1854): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                                                                  ^
+
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -g -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -I/home/usr2/11D37048/usr/tools/scr-1.1-8//include -c utilities.c
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -g -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -I/home/usr2/11D37048/usr/tools/scr-1.1-8//include -c parse_options.c
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -g -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -I/home/usr2/11D37048/usr/tools/scr-1.1-8//include -c aiori-POSIX.c
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -g -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -I/home/usr2/11D37048/usr/tools/scr-1.1-8//include -c aiori-noMPIIO.c
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -g -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -I/home/usr2/11D37048/usr/tools/scr-1.1-8//include -c aiori-noHDF5.c
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -g -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -I/home/usr2/11D37048/usr/tools/scr-1.1-8//include -c aiori-noNCMPI.c
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -o IOR IOR.o utilities.o parse_options.o \
+		aiori-POSIX.o aiori-noMPIIO.o aiori-noHDF5.o aiori-noNCMPI.o \
+		 -lm -L/home/usr2/11D37048/usr/tools/scr-1.1-8//lib -lscr 

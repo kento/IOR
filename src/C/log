@@ -1,0 +1,35 @@
+/usr/apps/openmpi/1.4.2/intel/bin/mpicc -g -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -I/home/usr2/11D37048/usr/tools/scr-1.1-8//include -c IOR.c
+IOR.c(673): error: expected a ";"
+    for (i=0; i<N; ++i) {
+    ^
+
+IOR.c(677): warning #12: parsing restarts here after previous syntax error
+  }
+  ^
+
+IOR.c(1840): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                               ^
+
+IOR.c(1840): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                                                  ^
+
+IOR.c(1840): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                                                                  ^
+
+IOR.c(1855): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                               ^
+
+IOR.c(1855): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                                                  ^
+
+IOR.c(1855): warning #181: argument is incompatible with corresponding format string conversion
+          fprintf(stdout," %d %d %d %d %d %d %d %d %d %d %d %lld %d %s",test->numTasks,test->tasksPerNode,test->repetitions,test->filePerProc,test->reorderTasks,test->taskPerNodeOffset,test->reorderTasksRandom,test->reorderTasksRandomSeed,test->segmentCount,test->blockSize,test->transferSize,test->aggFileSizeForBW[0],test->TestNum,test->api);
+                                                                                                                                                                                                                                                                                  ^
+
+compilation aborted for IOR.c (code 2)
+gmake: *** [IOR.o] Error 2
